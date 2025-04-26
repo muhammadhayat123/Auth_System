@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodbye!</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Add Tailwind -->
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">You have been logged out.</h2>
+            <p class="text-gray-600 mb-8">Thank you for visiting!</p>
+
+            <div class="space-y-4">
+                <!-- Login Button -->
+                <form action="/login" method="get">
+                    <button type="submit"
+                        class="w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                        Login Again
+                    </button>
+                </form>
+
+                <!-- Register Button -->
+                <form action="/" method="get">
+                    <button type="submit"
+                        class="w-full py-2 px-4 bg-green-600 text-white rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+                        Register
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
